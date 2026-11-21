@@ -25,6 +25,8 @@
   --container: 1200px;
 }
 
+
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
@@ -156,7 +158,7 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 .cgpa-badge strong { font-size: 30px; font-weight: 800; line-height: 1; }
 .cgpa-badge span { font-size: 11px; font-weight: 700; letter-spacing: .12em; margin-top: 4px; }
 .terminal {
-  position: absolute; bottom: 12px; left: 85px; z-index: 4;
+  position: absolute; bottom: -28px; left: 85px; z-index: 4;
   width: 355px; background: #141412; color: #e8e8e2;
   border: var(--border); border-radius: 16px;
   box-shadow: 10px 10px 0 rgba(18,18,16,.9);
@@ -183,13 +185,33 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 @keyframes float { 0%, 100% { transform: rotate(4deg) translateY(0); } 50% { transform: rotate(4deg) translateY(-8px); } }
 
 /* -------------------- Marquee -------------------- */
-.marquee-wrap { position: relative; z-index: 5; margin: 20px 0 0; overflow: hidden; }
-.marquee { background: var(--ink); transform: rotate(-1.7deg) scale(1.04); padding: 16px 0; }
-.marquee-track { display: flex; width: max-content; animation: marquee 32s linear infinite; }
-.marquee-item { display: inline-flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap; }
-.marquee-item span { color: #fff; font-size: 21px; font-weight: 800; letter-spacing: -.02em; }
-.marquee-item i { color: var(--yellow); font-style: normal; font-size: 20px; }
-@keyframes marquee { to { transform: translateX(-50%); } }
+
+.marquee-wrap { position: relative; z-index: 5; width: 100%; margin: 18px 0 0; padding: 12px 0; overflow: hidden; transform: rotate(-1.7deg); transform-origin: center; }
+.marquee { width: 104%; margin-left: -2%; overflow: hidden; background: var(--ink); padding: 13px 0; }
+.marquee-track { display: flex; align-items: center; width: max-content; animation: marquee 30s linear infinite; will-change: transform; }
+.marquee-item {display: inline-flex;align-items: center; flex-shrink: 0; gap: 28px;padding: 0 18px;white-space: nowrap; }
+.marquee-item span { color: #fff; font-size: 19px; font-weight: 800; letter-spacing: -.02em; }
+.marquee-item i { color: var(--yellow); font-style: normal; font-size: 25px; font-weight: 900; line-height: 1; }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+
+@media (max-width: 760px) {
+  .marquee-wrap { padding: 10px 0; margin-top: 12px; }
+  .marquee { padding: 11px 0;}
+  .marquee-item { gap: 18px; padding: 0 12px; }
+  .marquee-item span {font-size: 15px; }
+  .marquee-item i { font-size: 20px;}
+}
+
 
 /* -------------------- Section headings -------------------- */
 .section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; margin-bottom: 48px; }
