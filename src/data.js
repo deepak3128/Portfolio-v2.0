@@ -24,7 +24,7 @@ export const navLinks = [
   { label: 'Skills', href: '#skills' },
 ]
 
-export const techs = ['React', 'Node.js', 'Python', 'TensorFlow', 'C++', 'Kotlin', 'MongoDB', 'AWS', 'Docker']
+export const techs = ['React', 'Node.js', 'Python', 'Express',  'Typescript', 'C++', 'JavaScript', 'MongoDB', 'AWS', 'Docker']
 
 export const filters = [
   { label: 'All', value: 'all' },
@@ -119,15 +119,15 @@ export const timeline = [
   },
   {
     dot: 'dot-green',
-    date: '2024 — PRESENT',
-    title: 'Technical Lead, GDSC VIT',
+    date: '2024 — 2026',
+    title: 'Campus Head, GeeksforGeeks',
     description: 'Ran 14 workshops on web dev and Google Cloud for 800+ students, and mentor juniors for their first hackathons.',
   },
   {
     dot: 'dot-pink',
     date: '2023 — PRESENT',
-    title: '650+ DSA problems solved',
-    description: 'LeetCode Knight (top 4%), 200-day streak, Global Rank 312 in CodeChef Starters 142.',
+    title: '400+ DSA problems solved',
+    description: 'LeetCode and GeeksforGeeks, 100-day streak',
   },
   {
     dot: 'dot-orange',
@@ -147,7 +147,7 @@ export const certificates = [
 ]
 
 export const skillGroups = [
-  { label: '// languages', pills: [{ name: 'C++', hl: 'hl-yellow' }, { name: 'Python', hl: 'hl-yellow' }, { name: 'Java' }, { name: 'JavaScript' }, { name: 'Kotlin' }, { name: 'SQL' }] },
+  { label: '// languages', pills: [{ name: 'C++', hl: 'hl-yellow' }, { name: 'Python', hl: 'hl-yellow' }, { name: 'Java' }, { name: 'JavaScript' }, { name: 'TypeScript' }, { name: 'SQL' }] },
   { label: '// frameworks & libraries', pills: [{ name: 'React', hl: 'hl-blue' }, { name: 'Node / Express', hl: 'hl-blue' }, { name: 'Next.js' }, { name: 'Flask' }, { name: 'TensorFlow' }, { name: 'Tailwind' }] },
   { label: '// tools & cloud', pills: [{ name: 'Git', hl: 'hl-green' }, { name: 'AWS', hl: 'hl-green' }, { name: 'Docker' }, { name: 'Firebase' }, { name: 'MongoDB' }, { name: 'PostgreSQL' }] },
 ]

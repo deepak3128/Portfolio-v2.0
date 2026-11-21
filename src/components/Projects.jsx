@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { filters, featuredProject, projects } from '../data.js'
 import { GithubIcon, HandArrowDown, PlayIcon, ExternalIcon } from './Icons.jsx'
 
@@ -70,6 +70,15 @@ function ProjectCard({ project }) {
 
 export default function Projects() {
   const [active, setActive] = useState('all')
+
+  /* Filtered cards are freshly mounted, so make sure the reveal animation
+     doesn't leave them invisible after a filter change */
+  useEffect(() => {
+    const id = requestAnimationFrame(() => {
+      document.querySelectorAll('#projects .reveal').forEach((el) => el.classList.add('in-view'))
+    })
+    return () => cancelAnimationFrame(id)
+  }, [active])
 
   const visible = (category) => active === 'all' || category === active
 

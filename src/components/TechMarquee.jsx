@@ -14,13 +14,26 @@ function TechSet() {
   )
 }
 
+function TechGroup() {
+  return (
+    <div className="marquee-group">
+      <TechSet />
+      <TechSet />
+    </div>
+  )
+}
+
 export default function TechMarquee() {
   return (
     <div className="marquee-wrap" aria-hidden="true">
+      <style>{`
+        .marquee-wrap .marquee-track { will-change: auto; }
+        .marquee-wrap .marquee-group { display: flex; flex-shrink: 0; }
+      `}</style>
       <div className="marquee">
         <div className="marquee-track">
-          <TechSet />
-          <TechSet />
+          <TechGroup />
+          <TechGroup />
         </div>
       </div>
     </div>

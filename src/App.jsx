@@ -25,6 +25,18 @@ function useScrollEffects() {
     )
     revealEls.forEach((el) => observer.observe(el))
 
+    /* Watch for elements React adds/removes later (e.g. filtered project
+       cards) so newly mounted .reveal nodes get revealed too */
+    const mutationObserver = new MutationObserver(() => {
+      document.querySelectorAll('.reveal:not(.in-view)').forEach((el) => {
+        observer.observe(el)
+      })
+    })
+    mutationObserver.observe(document.getElementById('root'), {
+      childList: true,
+      subtree: true,
+    })
+
     /* Highlight the nav link for the section in view */
     const sections = document.querySelectorAll('section[id]')
     const navAnchors = document.querySelectorAll('.nav-links a')
@@ -42,6 +54,7 @@ function useScrollEffects() {
 
     return () => {
       observer.disconnect()
+      mutationObserver.disconnect()
       window.removeEventListener('scroll', highlightNav)
     }
   }, [])
@@ -60,15 +73,6 @@ export default function App() {
       <Certifications />
       <Skills />
       <Footer />
-      <div className="maker-strip">
-        <div className="container maker-inner">
-          <span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0v6a2 2 0 0 1-2 2h-2v-6h4M4 14h4v6H6a2 2 0 0 1-2-2v-4Z" /></svg>
-            Made with UX Pilot
-          </span>
-          <span>uxpilot.ai</span>
-        </div>
-      </div>
     </>
   )
 }

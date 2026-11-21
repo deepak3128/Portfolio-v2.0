@@ -39,6 +39,27 @@ export function CodeIcon() {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14" /></svg>
 }
 
+/* Solid teacup with steam — matches the little chai icon in the reference footer */
+export function ChaiIcon() {
+  return (
+    <svg className="chai-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="17.2" cy="13.2" r="2.7" fill="none" stroke="currentColor" strokeWidth="2.2" />
+      <path
+        d="M3.4 9.4h12.7v5.9a3.8 3.8 0 0 1-3.8 3.8H7.2a3.8 3.8 0 0 1-3.8-3.8V9.4Z"
+        fill="currentColor"
+        stroke="none"
+      />
+      <path
+        d="M7.6 2.6c-1 .9-1 1.8 0 2.7M11.8 2.4c-1 .9-1 1.9 0 2.8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
 /* Hand-drawn arrows used in the script annotations */
 export function HandArrowDown() {
   return (
