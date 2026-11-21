@@ -6,9 +6,9 @@ export default function Achievements() {
       <div className="container ach-inner">
         <div className="ach-left reveal">
           <h2 className="section-title section-title-light">Achievements</h2>
-          <p className="script script-yellow">the proud-mom list</p>
+          <p className="script script-yellow" style={{ fontSize: '27px', margin: '6px 0 0' }}>the proud-mom list</p>
 
-          <div className="award-card">
+          <div className="award-card" style={{ marginBottom: '42px' }}>
             <span className="trophy">🏆</span>
             <span className="award-date">{award.date}</span>
             <h3>{award.title[0]}<br />{award.title[1]}</h3>

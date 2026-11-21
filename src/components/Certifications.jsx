@@ -8,9 +8,9 @@ export default function Certifications() {
         <div className="section-head reveal">
           <div>
             <h2 className="section-title">Certifications</h2>
-            <p className="script script-orange">learning beyond the syllabus</p>
+            <p className="script script-orange" style={{ fontStyle: 'italic', fontSize: '30px', letterSpacing: '.01em' }}>learning beyond the syllabus</p>
           </div>
-          <p className="head-note">6 certificates <span>·</span> all verifiable</p>
+          <p className="head-note" style={{ fontSize: '17px' }}>6 certificates <span>·</span> all verifiable</p>
         </div>
 
         <div className="cert-card reveal">

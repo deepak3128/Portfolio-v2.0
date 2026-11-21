@@ -7,7 +7,7 @@ function FeaturedCard() {
   return (
     <article className="featured-card reveal" data-category="ai">
       <span className="ribbon">{p.ribbon}</span>
-      <div className="featured-visual">
+      <div className="featured-visual" style={{ border: '1px solid #121210' }}>
         <img src={p.image} alt={p.imageAlt} />
       </div>
       <div className="featured-body">

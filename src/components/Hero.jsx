@@ -6,6 +6,14 @@ export default function Hero() {
     <section className="hero">
       {/* Hero card visual fixes — scoped here so no other file is touched */}
       <style>{`
+        .hero { padding-bottom: 104px; }
+        .marquee-wrap .marquee {
+          padding: 15px 0;
+          border-top: 2px solid #121210;
+          border-bottom: 2px solid #121210;
+        }
+        .marquee-wrap .marquee-item span { font-size: 22px; }
+        .marquee-wrap .marquee-item i { font-size: 28px; }
         .hero .polaroid img {
           border: 2px solid #121210;
         }
@@ -18,16 +26,31 @@ export default function Hero() {
         .hero .terminal-bar {
           border-bottom-color: #2b2c2a;
         }
-        /* brighter accents sampled from the reference terminal */
-        .hero .mac-dots i:nth-child(1) { background: #ff6a34; }
-        .hero .mac-dots i:nth-child(2) { background: #ffd33e; }
-        .hero .mac-dots i:nth-child(3) { background: #3cdd97; }
+        /* vivid accents */
+        .hero .mac-dots i:nth-child(1) { background: #ff5b2e; }
+        .hero .mac-dots i:nth-child(2) { background: #ffdb3d; }
+        .hero .mac-dots i:nth-child(3) { background: #2bff9c; }
         .hero .terminal-title { color: #6e6c68; }
-        .hero .prompt { color: #3cdd97; }
-        .hero .cmd { color: #fdd13d; }
+        .hero .prompt { color: #2bff9c; text-shadow: 0 0 10px rgba(43,255,156,.45); }
+        .hero .cmd { color: #ffe23d; font-weight: 700; text-shadow: 0 0 10px rgba(255,226,61,.35); }
         .hero .out { color: #b7b3a9; }
-        .hero .val { color: #fef6ea; }
-        .hero .cursor { background: #3cdd97; }
+        .hero .val { color: #ffffff; }
+        .hero .cursor { background: #2bff9c; box-shadow: 0 0 8px rgba(43,255,156,.55); }
+        /* handwritten note under the photo card */
+        .hero .terminal-note {
+          right: -18px;
+          bottom: -34px;
+          font-size: 27px;
+          line-height: .95;
+          color: #5c5c55;
+        }
+        .hero .note-arrow {
+          display: block;
+          width: 32px;
+          height: 40px;
+          margin: 2px 6px 0 auto;
+          color: #5c5c55;
+        }
         .hero .tape {
           top: -18px;
           width: 148px;
@@ -99,7 +122,14 @@ export default function Hero() {
             </div>
           </div>
 
-          <p className="script terminal-note">yes, I like<br />dark terminals<br /><span>↓</span></p>
+          <p className="script terminal-note">
+            yes, I like<br />
+            dark terminals<br />
+            <svg className="note-arrow" viewBox="0 0 44 64" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M8 12 C20 7 27 12 27 23 L27 47" />
+              <path d="M27 47 L16 37 M27 47 L38 37" />
+            </svg>
+          </p>
         </div>
       </div>
     </section>
