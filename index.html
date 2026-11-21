@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Mehta — Full-stack developer &amp; CSE student</title>
+  <meta name="description" content="Portfolio of Arjun Mehta — CSE student at VIT Vellore, full-stack developer, ML tinkerer and competitive programmer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">arjun<span>.dev</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Skills</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-yellow btn-resume" href="assets/Arjun_Mehta_Resume.pdf" download>
+          Resume
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3"/></svg>
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="status-pill"><span class="status-dot"></span> Looking for Summer '25 internships</span>
+
+        <p class="script hero-script">hey there, I'm</p>
+        <h1 class="hero-title">Arjun<br />Mehta<span class="title-dot">.</span></h1>
+
+        <p class="hero-desc">
+          3rd-year <mark>CSE student</mark> at VIT Vellore. I build full-stack apps,
+          mess around with ML models and solve LeetCode problems way past midnight.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#projects">
+            See my work
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0 6-6m-6 6-6-6"/></svg>
+          </a>
+          <a class="icon-btn" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C20.4 8.75 21 11 21 14v7h-4v-6.2c0-1.48-.03-3.38-2.1-3.38-2.1 0-2.42 1.6-2.42 3.27V21H9V9Z"/></svg>
+          </a>
+          <a class="icon-btn" href="mailto:arjun.mehta@email.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3V6Zm0 0 9 7 9-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="assets/hero-photo.png" alt="Portrait of Arjun Mehta" />
+          <span class="polaroid-caption">tugging</span>
+        </div>
+
+        <div class="cgpa-badge">
+          <strong>9.12</strong>
+          <span>CGPA</span>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="mac-dots"><i></i><i></i><i></i></span>
+            <span class="terminal-title">~/arjun</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">→</span> <span class="cmd">whoami</span></p>
+            <p class="out">btech cse '26 · vit vellore</p>
+            <p class="gap"><span class="prompt">→</span> <span class="cmd">cat stats.txt</span></p>
+            <p class="out">leetcode: 1912 (knight)</p>
+            <p class="out">projects: 12 shipped</p>
+            <p class="gap"><span class="prompt">→</span> <span class="cursor"></span></p>
+          </div>
+        </div>
+
+        <p class="script terminal-note">yes, I like<br />dark terminals<br /><span>↓</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH MARQUEE ============ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+  </div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2 class="section-title">Projects</h2>
+          <p class="script script-orange">stuff I actually shipped ↘</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ai">AI / ML</button>
+          <button class="filter" data-filter="android">Android</button>
+        </div>
+      </div>
+
+      <article class="featured-card reveal" data-category="ai">
+        <span class="ribbon">🏆 SIH '24 Finalist</span>
+        <div class="featured-visual">
+          <img src="assets/project-facetrack.png" alt="FaceTrack smart attendance dashboard on a laptop" />
+        </div>
+        <div class="featured-body">
+          <div class="card-meta"><span class="num-tag">#01</span> Featured <span class="dot-sep">·</span> 2025</div>
+          <h3>FaceTrack</h3>
+          <h4>Smart attendance with face recognition</h4>
+          <p>Teachers were losing ~10 min every class to roll call, so I built a system that marks attendance from a single classroom photo. It's now used by 3 departments on campus.</p>
+          <ul class="check-list">
+            <li>97% recognition accuracy with a fine-tuned FaceNet model</li>
+            <li>Works on cheap webcams, results in under 3 seconds</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span><span class="tag">Flask</span>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-dark btn-sm" href="https://github.com" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              View code
+            </a>
+            <a class="btn btn-white btn-sm" href="#projects">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg>
+              Watch demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="web">
+          <div class="project-visual visual-blue"><img src="assets/project-campuskart.png" alt="CampusKart marketplace homepage" /></div>
+          <div class="project-body">
+            <div class="card-meta"><span>#02</span> <span class="dot-sep">·</span> Web <span class="year">2024</span></div>
+            <h3>CampusKart</h3>
+            <p>A buy-and-sell marketplace for students on campus, for books, cycles and hostel stuff. 1,200+ people use it.</p>
+            <p class="tech-line">React <span>·</span> Node <span>·</span> MongoDB <span>·</span> Socket.io</p>
+            <div class="card-links">
+              <a href="https://github.com" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg> Code
+              </a>
+              <a href="#projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg> Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-visual visual-green"><img src="assets/project-resumelens.png" alt="ResumeLens resume analysis dashboard" /></div>
+          <div class="project-body">
+            <div class="card-meta"><span>#03</span> <span class="dot-sep">·</span> AI / ML <span class="year">2024</span></div>
+            <h3>ResumeLens</h3>
+            <p>Paste a job description and your resume, and it tells you what's missing. I built it during placement season.</p>
+            <p class="tech-line">Python <span>·</span> spaCy <span>·</span> HuggingFace <span>·</span> Streamlit</p>
+            <div class="card-links">
+              <a href="https://github.com" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg> Code
+              </a>
+              <a href="#projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg> Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="android">
+          <div class="project-visual visual-pink"><img src="assets/project-splitease.png" alt="SplitEase expense splitting app on two phones" /></div>
+          <div class="project-body">
+            <div class="card-meta"><span>#04</span> <span class="dot-sep">·</span> Android <span class="year">2023</span></div>
+            <h3>SplitEase</h3>
+            <p>Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.</p>
+            <p class="tech-line">Kotlin <span>·</span> Jetpack Compose <span>·</span> Firebase</p>
+            <div class="card-links">
+              <a href="https://github.com" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg> Code
+              </a>
+              <a href="#projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg> Play Store
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-link reveal">
+        <a href="https://github.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          8 more on GitHub <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="achievements section" id="achievements">
+    <div class="container ach-inner">
+      <div class="ach-left reveal">
+        <h2 class="section-title section-title-light">Achievements</h2>
+        <p class="script script-yellow">the proud-mom list</p>
+
+        <div class="award-card">
+          <span class="trophy">🏆</span>
+          <span class="award-date">DEC 2024</span>
+          <h3>Smart India Hackathon<br />National Finalist</h3>
+          <p>Top 5 out of 400+ teams. We pitched FaceTrack to the Ministry of Education jury in Delhi.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-box"><strong>1912</strong><span>LeetCode · Knight</span></div>
+          <div class="stat-box"><strong class="pink">4★</strong><span>CodeChef · 1850</span></div>
+        </div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="tl-dot dot-yellow"></span>
+          <span class="tl-date">MAR 2024</span>
+          <h3>Won HackVIT 2024 <span class="mini-badge">1st place</span></h3>
+          <p>36 hours, 3 energy drinks per person and one working demo. We built CampusKart's first version here and took home ₹50,000.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="tl-dot dot-blue"></span>
+          <span class="tl-date">JUL 2024</span>
+          <h3>Published at IEEE ICCCNT 2024</h3>
+          <p>"Lightweight Face Recognition for Low-Resource Classroom Attendance Systems". My first research paper, co-authored with Dr. R. Iyer.</p>
+          <a class="paper-link" href="#achievements">Read paper →</a>
+        </div>
+        <div class="timeline-item">
+          <span class="tl-dot dot-green"></span>
+          <span class="tl-date">2024 — PRESENT</span>
+          <h3>Technical Lead, GDSC VIT</h3>
+          <p>Ran 14 workshops on web dev and Google Cloud for 800+ students, and mentor juniors for their first hackathons.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="tl-dot dot-pink"></span>
+          <span class="tl-date">2023 — PRESENT</span>
+          <h3>650+ DSA problems solved</h3>
+          <p>LeetCode Knight (top 4%), 200-day streak, Global Rank 312 in CodeChef Starters 142.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="tl-dot dot-orange"></span>
+          <span class="tl-date">2023</span>
+          <h3>Dean's Merit Scholarship</h3>
+          <p>Awarded to the top 1% of the CSE batch for academic performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="script script-orange">learning beyond the syllabus</p>
+        </div>
+        <p class="head-note">6 certificates <span>·</span> all verifiable</p>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-row">
+          <div class="cert-icon icon-aws">aws</div>
+          <div class="cert-info"><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services</p></div>
+          <div class="cert-id">ID AWS-CCP-8F21K</div>
+          <div class="cert-date">JAN '25</div>
+          <a class="cert-link" href="#certifications" aria-label="View certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon icon-ml">C</div>
+          <div class="cert-info"><h3>Machine Learning Specialization</h3><p>Stanford &amp; DeepLearning.AI · Coursera</p></div>
+          <div class="cert-id">ID ML-QX93LP</div>
+          <div class="cert-date">AUG '24</div>
+          <a class="cert-link" href="#certifications" aria-label="View certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon icon-dsa">🎓</div>
+          <div class="cert-info"><h3>Data Structures &amp; Algorithms <span class="gold-badge">ELITE + GOLD</span></h3><p>NPTEL · IIT Kharagpur · Top 2%</p></div>
+          <div class="cert-id">ID NPTEL24CS41</div>
+          <div class="cert-date">APR '24</div>
+          <a class="cert-link" href="#certifications" aria-label="View certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon icon-meta">∞</div>
+          <div class="cert-info"><h3>Meta Front-End Developer</h3><p>Meta · Coursera Professional Certificate</p></div>
+          <div class="cert-id">ID META-FE-72JD</div>
+          <div class="cert-date">DEC '23</div>
+          <a class="cert-link" href="#certifications" aria-label="View certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon icon-google">G</div>
+          <div class="cert-info"><h3>Google Cloud Arcade, Champion Tier</h3><p>Google Cloud Skills Boost · 42 badges</p></div>
+          <div class="cert-id">PROFILE /arjunn</div>
+          <div class="cert-date">OCT '23</div>
+          <a class="cert-link" href="#certifications" aria-label="View certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon icon-oracle">☕</div>
+          <div class="cert-info"><h3>Oracle Certified Associate, Java SE 8</h3><p>Oracle University</p></div>
+          <div class="cert-id">ID OCA-JSE8-5521</div>
+          <div class="cert-date">JUN '23</div>
+          <a class="cert-link" href="#certifications" aria-label="View certificate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills section" id="skills">
+    <div class="container skills-inner">
+      <div class="skills-left reveal">
+        <h2 class="section-title">Skills</h2>
+        <p class="script script-orange">my everyday toolbox</p>
+
+        <div class="github-card">
+          <div class="github-head">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg> GitHub activity</span>
+            <small>847 commits · 2024</small>
+          </div>
+          <div class="graph" id="githubGraph" aria-label="GitHub contribution graph"></div>
+          <div class="graph-legend">less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> more</div>
+        </div>
+      </div>
+
+      <div class="skills-right reveal">
+        <div class="skill-group">
+          <p class="group-label">// languages</p>
+          <div class="skill-pills">
+            <span class="skill-pill hl-yellow">C++</span><span class="skill-pill hl-yellow">Python</span><span class="skill-pill">Java</span><span class="skill-pill">JavaScript</span><span class="skill-pill">Kotlin</span><span class="skill-pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="group-label">// frameworks &amp; libraries</p>
+          <div class="skill-pills">
+            <span class="skill-pill hl-blue">React</span><span class="skill-pill hl-blue">Node / Express</span><span class="skill-pill">Next.js</span><span class="skill-pill">Flask</span><span class="skill-pill">TensorFlow</span><span class="skill-pill">Tailwind</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="group-label">// tools &amp; cloud</p>
+          <div class="skill-pills">
+            <span class="skill-pill hl-green">Git</span><span class="skill-pill hl-green">AWS</span><span class="skill-pill">Docker</span><span class="skill-pill">Firebase</span><span class="skill-pill">MongoDB</span><span class="skill-pill">PostgreSQL</span>
+          </div>
+        </div>
+        <p class="script skill-note">↱ highlighted ones = what I use daily</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top reveal">
+        <p class="script footer-script">got an internship or a cool project?</p>
+        <a class="footer-email" href="mailto:arjun.mehta@email.com">
+          arjun.mehta@email.com
+          <span class="email-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a class="icon-btn" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+          <a class="icon-btn" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C20.4 8.75 21 11 21 14v7h-4v-6.2c0-1.48-.03-3.38-2.1-3.38-2.1 0-2.42 1.6-2.42 3.27V21H9V9Z"/></svg></a>
+          <a class="icon-btn" href="#contact" aria-label="Profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v2m0 14v2M3 12h2m14 0h2"/></svg></a>
+          <a class="icon-btn" href="#projects" aria-label="Source code"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14"/></svg></a>
+        </div>
+        <p class="footer-credit">built by hand with too much chai ☕</p>
+        <p class="footer-copy">© 2025 Arjun Mehta</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="maker-strip">
+    <div class="container maker-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0v6a2 2 0 0 1-2 2h-2v-6h4M4 14h4v6H6a2 2 0 0 1-2-2v-4Z"/></svg> Made with UX Pilot</span>
+      <span>uxpilot.ai</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
