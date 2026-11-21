@@ -4,6 +4,42 @@ import { GithubIcon, LinkedinIcon, MailIcon, ArrowDownIcon } from './Icons.jsx'
 export default function Hero() {
   return (
     <section className="hero">
+      {/* Hero card visual fixes — scoped here so no other file is touched */}
+      <style>{`
+        .hero .polaroid img {
+          border: 2px solid #121210;
+        }
+        .hero .terminal {
+          bottom: -46px;
+          left: 70px;
+          background: #111211;
+          box-shadow: 10px 10px 0 #000;
+        }
+        .hero .terminal-bar {
+          border-bottom-color: #2b2c2a;
+        }
+        /* brighter accents sampled from the reference terminal */
+        .hero .mac-dots i:nth-child(1) { background: #ff6a34; }
+        .hero .mac-dots i:nth-child(2) { background: #ffd33e; }
+        .hero .mac-dots i:nth-child(3) { background: #3cdd97; }
+        .hero .terminal-title { color: #6e6c68; }
+        .hero .prompt { color: #3cdd97; }
+        .hero .cmd { color: #fdd13d; }
+        .hero .out { color: #b7b3a9; }
+        .hero .val { color: #fef6ea; }
+        .hero .cursor { background: #3cdd97; }
+        .hero .tape {
+          top: -18px;
+          width: 148px;
+          height: 30px;
+          /* translucent, so the polaroid's black border shows through it */
+          background: rgba(255, 210, 66, .86);
+        }
+        .hero .tape::after {
+          display: none;
+        }
+      `}</style>
+
       <div className="container hero-inner">
         <div className="hero-copy reveal">
           <span className="status-pill"><span className="status-dot"></span> {profile.status}</span>
@@ -57,8 +93,8 @@ export default function Hero() {
               <p><span className="prompt">→</span> <span className="cmd">whoami</span></p>
               <p className="out">{profile.terminalUser}</p>
               <p className="gap"><span className="prompt">→</span> <span className="cmd">cat stats.txt</span></p>
-              <p className="out">leetcode: {profile.leetcode}</p>
-              <p className="out">projects: {profile.projectsCount}</p>
+              <p className="out">leetcode: <span className="val">{profile.leetcode}</span></p>
+              <p className="out">projects: <span className="val">{profile.projectsCount}</span></p>
               <p className="gap"><span className="prompt">→</span> <span className="cursor"></span></p>
             </div>
           </div>
