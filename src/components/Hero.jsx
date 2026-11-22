@@ -111,7 +111,7 @@ export default function Hero() {
             <a className="icon-btn" href="https://github.com/deepak3128" target="_blank" rel="noopener" aria-label="GitHub">
               <GithubIcon />
             </a>
-            <a className="icon-btn" href="https://linkedin.com/in/deepak-katiyar" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <a className="icon-btn" href="https://linkedin.com/in/deepak3128" target="_blank" rel="noopener" aria-label="LinkedIn">
               <LinkedinIcon />
             </a>
             <a className="icon-btn" href={`mailto:${profile.email}`} aria-label="Email">
