@@ -7,6 +7,21 @@ export default function Hero() {
       {/* Hero card visual fixes — scoped here so no other file is touched */}
       <style>{`
         .hero { padding-bottom: 104px; }
+        /* status pill: monospace label + clean green dot, per reference */
+        .hero .status-pill {
+          font-family: "JetBrains Mono", monospace;
+          font-weight: 500;
+          font-size: 13px;
+          box-shadow: none;
+        }
+        .hero .status-dot {
+          width: 10px;
+          height: 10px;
+          border: 1.5px solid #121210;
+          box-shadow: none;
+        }
+        /* See my work button — less rounded, like the reference */
+        .hero .btn-dark { border-radius: 13px; }
         .marquee-wrap .marquee {
           padding: 15px 0;
           border-top: 2px solid #121210;
@@ -54,8 +69,8 @@ export default function Hero() {
         }
         .hero .tape {
           top: -18px;
-          width: 160px;
-          height: 34px;
+          width: 162px;
+          height: 36px;
           transform: translateX(-50%) rotate(8deg);
           border: 0;
           box-shadow: none;

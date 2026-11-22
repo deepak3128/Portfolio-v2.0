@@ -8,7 +8,7 @@ export const profile = {
   status: "Looking for Full time opportunites",
   year: '4rd-year',
   college: 'MPGI Kanpur',
-  email: '@email.com',
+  email: 'deepakkatiyar16@email.com',
   cgpa: '7.2',
   terminalTitle: '~/deepak',
   terminalUser: "btech cse '27 · mpgi kanpur",

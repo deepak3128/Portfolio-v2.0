@@ -21,7 +21,7 @@ export default function Navbar() {
         </nav>
 
         <div className="nav-actions">
-          <a className="btn btn-yellow btn-resume" href="/assets/Arjun_Mehta_Resume.pdf" download>
+          <a className="btn btn-yellow btn-resume" href="/assets/Deepak_Katiyar_Resume.pdf" download>
             Resume
             <DownloadIcon />
           </a>
