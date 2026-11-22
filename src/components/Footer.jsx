@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-socials">
             <a className="icon-btn" href="https://github.com/deepak3128" target="_blank" rel="noopener" aria-label="GitHub"><GithubIcon /></a>
-            <a className="icon-btn" href="https://linkedin.com/deepak3128" target="_blank" rel="noopener" aria-label="LinkedIn"><LinkedinIcon /></a>
+            <a className="icon-btn" href="https://linkedin.com/in/deepak3128" target="_blank" rel="noopener" aria-label="LinkedIn"><LinkedinIcon /></a>
             <a className="icon-btn" href="#contact" aria-label="About"><HelpIcon /></a>
             <a className="icon-btn" href="#projects" aria-label="Source code"><CodeIcon /></a>
           </div>

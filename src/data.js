@@ -145,7 +145,7 @@ export const award = {
   title: ['Smart India Hackathon', 'National Finalist'],
   description: 'Top 5 out of 500+ teams. We pitched FaceTrack to the Ministry of Gujrat Gujarat Council on Science & Technology (GUJCOST),Dept of Science & Technology.',
   stats: [
-    { value: '1912', label: 'LeetCode · Knight' },
+    { value: '1400', label: 'LeetCode · Knight' },
     { value: '4★', label: 'CodeChef · 1850', pink: true },
   ],
 }
@@ -192,9 +192,8 @@ export const timeline = [
    ------------------------------------------------------------------ */
 export const certificates = [
   { icon: 'icon-aws', mark: 'aws', title: 'AWS Certified Cloud Practitioner', org: 'Amazon Web Services', id: 'ID AWS-CCP-8F21K', date: "JAN '25", verify: 'https://www.credly.com/your-certificate-link' },
-  { icon: 'icon-dsa', mark: '🎓', title: 'Data Structures & Algorithms', badge: 'ELITE + GOLD', org: 'NPTEL · IIT Kharagpur · Top 2%', id: 'ID NPTEL24CS41', date: "APR '24", verify: 'https://nptel.ac.in/your-certificate-link' },
   { icon: 'icon-meta', mark: 'IBM', title: 'Python', org: 'IBM · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23", verify: 'https://coursera.org/verify/your-certificate-id' },
-  { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Trooper Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /arjunn', date: "OCT '23", verify: 'https://cloud.google.com/skills/your-profile' },
+  { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Trooper Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /deepak', date: "OCT '23", verify: 'https://cloud.google.com/skills/your-profile' },
   { icon: 'icon-oracle', mark: '☕', title: 'Oracle Certified Associate, Java SE 8', org: 'Oracle University', id: 'ID KWZZ9SZXNDSA', date: "JUN '23", verify: 'https://education.oracle.com/your-certification' },
   { icon: 'icon-google', mark: 'G', title: 'Tools of the Trade: Linux and SQL', org: 'Google  · Coursera', id: 'ID 88L5F96532XL', date: "Nov '23 ", verify: 'https://coursera.org/verify/88L5F96532XL' },
   { icon: 'icon-google', mark: 'G', title: 'Network Security', org: 'Google  · Coursera', id: 'ID KWZZ9SZXNDSA', date: "Nov '23 ", verify: 'https://coursera.org/verify/KWZZ9SZXNDSA' },
