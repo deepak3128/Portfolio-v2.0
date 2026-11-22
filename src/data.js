@@ -40,7 +40,7 @@ export const featuredProject = {
   year: '2025',
   title: 'Sabarmati',
   subtitle: 'Riverfront & Urban Water Bodies Monitoring App',
-  description: "Teachers were losing ~10 min every class to roll call, so I built a system that marks attendance from a single classroom photo. It's now used by 3 departments on campus.",
+  description: "Cross-platform mobile application for real-time visualization of river conditions, flood alerts, and environmental data from IoT sensors deployed along the Sabarmati River.",
   highlights: [
     '97% recognition accuracy with a fine-tuned FaceNet model',
     'Works on cheap webcams, results in under 3 seconds',
@@ -48,8 +48,21 @@ export const featuredProject = {
   tags: ['React Native', 'Raspberry Pi', 'Rest APIs', 'IOT (LoRa, ESP32)'],
   image: '/assets/project-facetrack.png',
   imageAlt: 'FaceTrack smart attendance dashboard on a laptop',
+  // 👇 put your links here
+  github: 'https://github.com/deepak3128/Sabarmati-Smart-RiverWatch',
+  live: 'https://your-live-demo-link.com',
 }
 
+/* ------------------------------------------------------------------
+   PROJECT LINKS — add all your URLs here, one place for every card.
+
+     github     : source-code repository URL
+     live       : deployed demo / store URL
+     liveLabel  : (optional) button text — defaults to "Live"
+     play       : (optional) true shows the ▶ icon instead of ↗
+
+   Leave a value empty ('') to hide that button on the card.
+   ------------------------------------------------------------------ */
 export const projects = [
   {
     number: '#02',
@@ -62,7 +75,8 @@ export const projects = [
     visual: 'visual-blue',
     image: '/assets/project-campuskart.png',
     imageAlt: 'CampusKart marketplace homepage',
-    secondLink: { label: 'Live', href: '#projects' },
+    github: 'https://github.com/deepak3128/UrbanMed-Sync',
+    live: 'https://your-live-demo-link.com',
   },
   {
     number: '#03',
@@ -70,12 +84,13 @@ export const projects = [
     label: 'Web',
     year: '2026',
     title: 'Hair-Reviver',
-    description: "Paste a job description and your resume, and it tells you what's missing. I built it during placement season.",
+    description: "Manages clients, appointments, patch inventory, billing, staff roles and reports, with automatic maintenance reminders and WhatsApp deep links for reminders and invoice follow-up.",
     tech: ['Python', 'spaCy', 'HuggingFace', 'Streamlit'],
     visual: 'visual-green',
     image: '/assets/project-resumelens.png',
     imageAlt: 'ResumeLens resume analysis dashboard',
-    secondLink: { label: 'Live', href: '#projects' },
+    github: 'https://github.com/deepak3128/hair-reviver',
+    live: 'https://your-live-demo-link.com',
   },
   {
     number: '#04',
@@ -88,7 +103,10 @@ export const projects = [
     visual: 'visual-pink',
     image: '/assets/project-splitease.png',
     imageAlt: 'SplitEase expense splitting app on two phones',
-    secondLink: { label: 'Play Store', href: '#projects', play: true },
+    github: 'https://github.com/deepak3128/rms',
+    live: 'https://your-live-demo-link.com',
+    liveLabel: 'Play Store',
+    play: true,
   },
   {
     number: '#05',
@@ -96,12 +114,14 @@ export const projects = [
     label: 'Extension',
     year: '2026',
     title: 'Youtube Shorts Blocker',
-    description: 'Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.',
-    tech: ['Kotlin', 'Jetpack Compose', 'Firebase'],
+    description: 'A production-ready cross-browser extension that blocks YouTube Shorts using vanilla JavaScript with zero external dependencies.',
+    tech: ['JavaScript', 'Chrome Extensions API', 'DOM Manipulation', 'CSS'],
     visual: 'visual-pink',
     image: '/assets/project-splitease.png',
     imageAlt: 'SplitEase expense splitting app on two phones',
-    secondLink: { label: 'Play Store', href: '#projects', play: true },
+    github: 'https://github.com/deepak3128/Shorts-Blocker-Extension',
+    live: 'https://chromewebstore.google.com/your-extension',
+    liveLabel: 'Chrome Store',
   },
   {
     number: '#06',
@@ -109,12 +129,14 @@ export const projects = [
     label: 'Extension',
     year: '2026',
     title: 'Whatsapp-Restrictor',
-    description: 'Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.',
-    tech: ['Kotlin', 'Jetpack Compose', 'Firebase'],
+    description: 'A Chrome extension that helps you stop compulsively checking WhatsApp Web while studying, by limiting how long you can use it and locking it for a cooldown period once your time is up.',
+    tech: ['JavaScript', 'Chrome Extensions API', 'DOM Manipulation', 'CSS'],
     visual: 'visual-blue',
     image: '/assets/project-splitease.png',
     imageAlt: 'SplitEase expense splitting app on two phones',
-    secondLink: { label: 'Play Store', href: '#projects', play: true },
+    github: 'https://github.com/deepak3128/WhatsApp-Restrictor-Extension',
+    live: 'https://chromewebstore.google.com/your-extension',
+    liveLabel: 'Chrome Store',
   },
 ]
   

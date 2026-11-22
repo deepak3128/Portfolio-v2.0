@@ -24,12 +24,16 @@ function FeaturedCard() {
           {p.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
         </div>
         <div className="btn-row">
-          <a className="btn btn-dark btn-sm" href="https://github.com/deepak3128/Sabarmati-Smart-RiverWatch" target="_blank" rel="noopener">
-            <GithubIcon /> View code
-          </a>
-          <a className="btn btn-white btn-sm" href="#projects">
-            <PlayIcon /> Watch demo
-          </a>
+          {p.github && (
+            <a className="btn btn-dark btn-sm" href={p.github} target="_blank" rel="noopener">
+              <GithubIcon /> View code
+            </a>
+          )}
+          {p.live && (
+            <a className="btn btn-white btn-sm" href={p.live} target="_blank" rel="noopener">
+              <PlayIcon /> Watch demo
+            </a>
+          )}
         </div>
       </div>
     </article>
@@ -57,11 +61,15 @@ function ProjectCard({ project }) {
           ))}
         </p>
         <div className="card-links">
-          <a href="https://github.com/deepak3128/UrbanMed-Sync" target="_blank" rel="noopener"><GithubIcon /> Code</a>
-          <a href={project.secondLink.href}>
-            {project.secondLink.play ? <PlayIcon /> : <ExternalIcon />}
-            {project.secondLink.label}
-          </a>
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener"><GithubIcon /> Code</a>
+          )}
+          {project.live && (
+            <a href={project.live} target="_blank" rel="noopener">
+              {project.play ? <PlayIcon /> : <ExternalIcon />}
+              {project.liveLabel || 'Live'}
+            </a>
+          )}
         </div>
       </div>
     </article>
@@ -112,9 +120,7 @@ export default function Projects() {
         {visible('ai') && <FeaturedCard />}
 
         <div className="project-grid">
-          {projects
-            .filter((project) => visible(project.category))
-            .map((project) => <ProjectCard key={project.number} project={project} />)}
+          {shown.map((project) => <ProjectCard key={project.number} project={project} />)}
         </div>
 
         <div className="more-link reveal">

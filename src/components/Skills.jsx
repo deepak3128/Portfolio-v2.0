@@ -27,6 +27,10 @@ export default function Skills() {
 
   return (
     <section className="skills section" id="skills">
+      <style>{`
+        .skills-right .skill-note { font-size: 25px; }
+        .skills-right .skill-arrow { width: 20px; height: 26px; vertical-align: -6px; margin-right: 6px; }
+      `}</style>
       <div className="container skills-inner">
         <div className="skills-left reveal">
           <h2 className="section-title">Skills</h2>
