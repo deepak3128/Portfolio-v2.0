@@ -14,13 +14,14 @@ export default function Hero() {
         }
         .marquee-wrap .marquee-item span { font-size: 22px; }
         .marquee-wrap .marquee-item i { font-size: 28px; }
+        .marquee-wrap:hover .marquee-track { animation-play-state: running; }
         .hero .polaroid img {
           border: 2px solid #121210;
         }
         .hero .terminal {
           bottom: -46px;
           left: 70px;
-          background: #111211;
+          background: #050505;
           box-shadow: 10px 10px 0 #000;
         }
         .hero .terminal-bar {
@@ -33,7 +34,7 @@ export default function Hero() {
         .hero .terminal-title { color: #6e6c68; }
         .hero .prompt { color: #2bff9c; text-shadow: 0 0 10px rgba(43,255,156,.45); }
         .hero .cmd { color: #ffe23d; font-weight: 700; text-shadow: 0 0 10px rgba(255,226,61,.35); }
-        .hero .out { color: #b7b3a9; }
+        .hero .out { color: #d6d2c8; }
         .hero .val { color: #ffffff; }
         .hero .cursor { background: #2bff9c; box-shadow: 0 0 8px rgba(43,255,156,.55); }
         /* handwritten note under the photo card */
@@ -53,10 +54,19 @@ export default function Hero() {
         }
         .hero .tape {
           top: -18px;
-          width: 148px;
-          height: 30px;
-          /* translucent, so the polaroid's black border shows through it */
+          width: 160px;
+          height: 34px;
+          transform: translateX(-50%) rotate(8deg);
+          border: 0;
+          box-shadow: none;
+          /* same yellow as before — only the texture/shape comes from your PNG */
           background: rgba(255, 210, 66, .86);
+          -webkit-mask-image: url(/assets/paint_brush_mask.png);
+          mask-image: url(/assets/paint_brush_mask.png);
+          -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
         }
         .hero .tape::after {
           display: none;
