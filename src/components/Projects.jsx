@@ -5,14 +5,14 @@ import { GithubIcon, HandArrowDown, PlayIcon, ExternalIcon } from './Icons.jsx'
 function FeaturedCard() {
   const p = featuredProject
   return (
-    <article className="featured-card reveal" data-category="ai">
+    <article className="featured-card reveal" data-category={p.categories?.join(' ') || 'ai'}>
       <span className="ribbon">{p.ribbon}</span>
       <div className="featured-visual" style={{ border: '1px solid #121210' }}>
         <img src={p.image} alt={p.imageAlt} />
       </div>
       <div className="featured-body">
         <div className="card-meta">
-          <span className="num-tag">{p.number}</span> {p.label} <span className="dot-sep">·</span> {p.year}
+          <span className="num-tag">{p.number}</span> {p.label}{p.categories?.length ? ` / ${p.categories.join(', ')}` : ''} <span className="dot-sep">·</span> {p.year}
         </div>
         <h3>{p.title}</h3>
         <h4>{p.subtitle}</h4>
@@ -40,7 +40,7 @@ function FeaturedCard() {
   )
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, number }) {
   return (
     <article className="project-card reveal" data-category={project.category}>
       <div className={`project-visual ${project.visual}`}>
@@ -48,7 +48,7 @@ function ProjectCard({ project }) {
       </div>
       <div className="project-body">
         <div className="card-meta">
-          <span>{project.number}</span> <span className="dot-sep">·</span> {project.label}
+          <span>{number || project.number}</span> <span className="dot-sep">·</span> {project.label}
           <span className="year">{project.year}</span>
         </div>
         <h3>{project.title}</h3>
@@ -121,10 +121,16 @@ export default function Projects() {
           </div>
         </div>
 
-        {visible('ai') && <FeaturedCard />}
+        {(active === 'all' || featuredProject.categories?.includes(active)) && <FeaturedCard />}
 
         <div className="project-grid">
-          {shown.map((project) => <ProjectCard key={project.number} project={project} />)}
+          {shown.map((project, index) => (
+            <ProjectCard
+              key={project.number}
+              project={project}
+              number={active === 'all' ? undefined : `#${index + 1}`}
+            />
+          ))}
         </div>
 
         <div className="more-link reveal">

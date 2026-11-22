@@ -37,6 +37,7 @@ export const featuredProject = {
   ribbon: "🏆 SIH '25 Finalist",
   number: '#01',
   label: 'Featured',
+  categories: ['android'],
   year: '2025',
   title: 'Sabarmati',
   subtitle: 'Riverfront & Urban Water Bodies Monitoring App',
@@ -192,7 +193,7 @@ export const timeline = [
    ------------------------------------------------------------------ */
 export const certificates = [
   { icon: 'icon-aws', mark: 'aws', title: 'AWS Certified Cloud Practitioner', org: 'Amazon Web Services', id: 'ID AWS-CCP-8F21K', date: "JAN '25", verify: 'https://www.credly.com/your-certificate-link' },
-  { icon: 'icon-meta', mark: 'IBM', title: 'Python', org: 'IBM · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23", verify: 'https://coursera.org/verify/your-certificate-id' },
+  { icon: 'icon-meta', mark: 'IBM', title: 'Python', org: 'IBM · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23", verify: 'https://drive.google.com/file/d/1Oibnt2qr_4ZokbiXRxyqTrNSsfToebN9/view?usp=drivesdk' },
   { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Trooper Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /deepak', date: "OCT '23", verify: 'https://cloud.google.com/skills/your-profile' },
   { icon: 'icon-oracle', mark: '☕', title: 'Oracle Certified Associate, Java SE 8', org: 'Oracle University', id: 'ID KWZZ9SZXNDSA', date: "JUN '23", verify: 'https://education.oracle.com/your-certification' },
   { icon: 'icon-google', mark: 'G', title: 'Tools of the Trade: Linux and SQL', org: 'Google  · Coursera', id: 'ID 88L5F96532XL', date: "Nov '23 ", verify: 'https://coursera.org/verify/88L5F96532XL' },
