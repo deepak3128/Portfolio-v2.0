@@ -24,7 +24,7 @@ function FeaturedCard() {
           {p.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
         </div>
         <div className="btn-row">
-          <a className="btn btn-dark btn-sm" href="https://github.com" target="_blank" rel="noopener">
+          <a className="btn btn-dark btn-sm" href="https://github.com/deepak3128/Sabarmati-Smart-RiverWatch" target="_blank" rel="noopener">
             <GithubIcon /> View code
           </a>
           <a className="btn btn-white btn-sm" href="#projects">
@@ -57,7 +57,7 @@ function ProjectCard({ project }) {
           ))}
         </p>
         <div className="card-links">
-          <a href="https://github.com" target="_blank" rel="noopener"><GithubIcon /> Code</a>
+          <a href="https://github.com/deepak3128/UrbanMed-Sync" target="_blank" rel="noopener"><GithubIcon /> Code</a>
           <a href={project.secondLink.href}>
             {project.secondLink.play ? <PlayIcon /> : <ExternalIcon />}
             {project.secondLink.label}
@@ -81,6 +81,11 @@ export default function Projects() {
   }, [active])
 
   const visible = (category) => active === 'all' || category === active
+
+  /* Keep the default section compact: show only the first few cards.
+     Clicking a category filter reveals every project in that category. */
+  const matching = projects.filter((project) => visible(project.category))
+  const shown = active === 'all' ? matching.slice(0, 3) : matching
 
   return (
     <section className="projects section" id="projects">
@@ -113,7 +118,7 @@ export default function Projects() {
         </div>
 
         <div className="more-link reveal">
-          <a href="https://github.com" target="_blank" rel="noopener">
+          <a href="https://github.com/deepak3128" target="_blank" rel="noopener">
             <GithubIcon />
             8 more on GitHub <span>→</span>
           </a>

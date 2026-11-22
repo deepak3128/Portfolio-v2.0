@@ -8,12 +8,12 @@ export const profile = {
   status: "Looking for Full time opportunites",
   year: '4rd-year',
   college: 'MPGI Kanpur',
-  email: 'arjun.mehta@email.com',
+  email: '@email.com',
   cgpa: '7.2',
   terminalTitle: '~/deepak',
   terminalUser: "btech cse '27 · mpgi kanpur",
-  leetcode: '200',
-  projectsCount: '8 shipped',
+  leetcode: '200+',
+  projectsCount: '8+ shipped',
   copyright: '© 2026 Deepak Katiyar',
 }
 
@@ -29,7 +29,7 @@ export const techs = ['React', 'Node.js', 'Python', 'Express',  'Typescript', 'C
 export const filters = [
   { label: 'All', value: 'all' },
   { label: 'Web', value: 'web' },
-  { label: 'AI / ML', value: 'ai' },
+  { label: 'Extensions', value: 'extension' },
   { label: 'Android', value: 'android' },
 ]
 
@@ -38,14 +38,14 @@ export const featuredProject = {
   number: '#01',
   label: 'Featured',
   year: '2025',
-  title: 'FaceTrack',
-  subtitle: 'Smart attendance with face recognition',
+  title: 'Sabarmati',
+  subtitle: 'Riverfront & Urban Water Bodies Monitoring App',
   description: "Teachers were losing ~10 min every class to roll call, so I built a system that marks attendance from a single classroom photo. It's now used by 3 departments on campus.",
   highlights: [
     '97% recognition accuracy with a fine-tuned FaceNet model',
     'Works on cheap webcams, results in under 3 seconds',
   ],
-  tags: ['Python', 'OpenCV', 'TensorFlow', 'Flask'],
+  tags: ['React Native', 'Raspberry Pi', 'Rest APIs', 'IOT (LoRa, ESP32)'],
   image: '/assets/project-facetrack.png',
   imageAlt: 'FaceTrack smart attendance dashboard on a laptop',
 }
@@ -56,9 +56,9 @@ export const projects = [
     category: 'web',
     label: 'Web',
     year: '2024',
-    title: 'CampusKart',
-    description: 'A buy-and-sell marketplace for students on campus, for books, cycles and hostel stuff. 1,200+ people use it.',
-    tech: ['React', 'Node', 'MongoDB', 'Socket.io'],
+    title: 'OPD System(UrbanMed-Sync)',
+    description: 'Full-stack OPD system to make operations paperless with real-time patient queue and bed availability tracking.',
+    tech: ['React', 'Flask', 'SQLAlchemy', 'Tailwind CSS','Socket.io'],
     visual: 'visual-blue',
     image: '/assets/project-campuskart.png',
     imageAlt: 'CampusKart marketplace homepage',
@@ -66,10 +66,10 @@ export const projects = [
   },
   {
     number: '#03',
-    category: 'ai',
-    label: 'AI / ML',
-    year: '2024',
-    title: 'ResumeLens',
+    category: 'web',
+    label: 'Web',
+    year: '2026',
+    title: 'Hair-Reviver',
     description: "Paste a job description and your resume, and it tells you what's missing. I built it during placement season.",
     tech: ['Python', 'spaCy', 'HuggingFace', 'Streamlit'],
     visual: 'visual-green',
@@ -79,10 +79,10 @@ export const projects = [
   },
   {
     number: '#04',
-    category: 'android',
-    label: 'Android',
-    year: '2023',
-    title: 'SplitEase',
+    category: 'web',
+    label: 'Web',
+    year: '2026',
+    title: 'RMS',
     description: 'Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.',
     tech: ['Kotlin', 'Jetpack Compose', 'Firebase'],
     visual: 'visual-pink',
@@ -90,8 +90,34 @@ export const projects = [
     imageAlt: 'SplitEase expense splitting app on two phones',
     secondLink: { label: 'Play Store', href: '#projects', play: true },
   },
+  {
+    number: '#05',
+    category: 'extension',
+    label: 'Extension',
+    year: '2026',
+    title: 'Youtube Shorts Blocker',
+    description: 'Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Firebase'],
+    visual: 'visual-pink',
+    image: '/assets/project-splitease.png',
+    imageAlt: 'SplitEase expense splitting app on two phones',
+    secondLink: { label: 'Play Store', href: '#projects', play: true },
+  },
+  {
+    number: '#06',
+    category: 'extension',
+    label: 'Extension',
+    year: '2026',
+    title: 'Whatsapp-Restrictor',
+    description: 'Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Firebase'],
+    visual: 'visual-blue',
+    image: '/assets/project-splitease.png',
+    imageAlt: 'SplitEase expense splitting app on two phones',
+    secondLink: { label: 'Play Store', href: '#projects', play: true },
+  },
 ]
-
+  
 export const award = {
   date: 'DEC 2025',
   title: ['Smart India Hackathon', 'National Finalist'],
@@ -139,17 +165,18 @@ export const timeline = [
 
 export const certificates = [
   { icon: 'icon-aws', mark: 'aws', title: 'AWS Certified Cloud Practitioner', org: 'Amazon Web Services', id: 'ID AWS-CCP-8F21K', date: "JAN '25" },
-  { icon: 'icon-ml', mark: 'C', title: 'Machine Learning Specialization', org: 'Stanford & DeepLearning.AI · Coursera', id: 'ID ML-QX93LP', date: "AUG '24" },
   { icon: 'icon-dsa', mark: '🎓', title: 'Data Structures & Algorithms', badge: 'ELITE + GOLD', org: 'NPTEL · IIT Kharagpur · Top 2%', id: 'ID NPTEL24CS41', date: "APR '24" },
-  { icon: 'icon-meta', mark: '∞', title: 'Meta Front-End Developer', org: 'Meta · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23" },
-  { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Champion Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /arjunn', date: "OCT '23" },
-  { icon: 'icon-oracle', mark: '☕', title: 'Oracle Certified Associate, Java SE 8', org: 'Oracle University', id: 'ID OCA-JSE8-5521', date: "JUN '23" },
+  { icon: 'icon-meta', mark: 'IBM', title: 'Python', org: 'IBM · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23" },
+  { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Trooper Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /arjunn', date: "OCT '23" },
+  { icon: 'icon-oracle', mark: '☕', title: 'Oracle Certified Associate, Java SE 8', org: 'Oracle University', id: 'ID KWZZ9SZXNDSA', date: "JUN '23" },
+  { icon: 'icon-google', mark: 'G', title: 'Tools of the Trade: Linux and SQL', org: 'Google  · Coursera', id: 'ID 88L5F96532XL', date: "Nov '23 " },
+  { icon: 'icon-google', mark: 'G', title: 'Network Security', org: 'Google  · Coursera', id: 'ID ML-QX93LP', date: "Nov '23 " },
 ]
 
 export const skillGroups = [
   { label: '// languages', pills: [{ name: 'C++', hl: 'hl-yellow' }, { name: 'Python', hl: 'hl-yellow' }, { name: 'Java' }, { name: 'JavaScript' }, { name: 'TypeScript' }, { name: 'SQL' }] },
-  { label: '// frameworks & libraries', pills: [{ name: 'React', hl: 'hl-blue' }, { name: 'Node / Express', hl: 'hl-blue' }, { name: 'Next.js' }, { name: 'Flask' }, { name: 'TensorFlow' }, { name: 'Tailwind' }] },
+  { label: '// frameworks & libraries', pills: [{ name: 'React', hl: 'hl-blue' }, { name: 'Node / Express', hl: 'hl-blue' }, { name: 'Next.js' }, { name: 'Flask' }, { name: 'SQLAlchemy  ' }, { name: 'Tailwind' }] },
   { label: '// tools & cloud', pills: [{ name: 'Git', hl: 'hl-green' }, { name: 'AWS', hl: 'hl-green' }, { name: 'Docker' }, { name: 'Firebase' }, { name: 'MongoDB' }, { name: 'PostgreSQL' }] },
 ]
 
-export const github = { label: 'GitHub activity', commits: '847 commits · 2024' }
+export const github = { label: 'GitHub activity', commits: '100+ commits · 2026' }
