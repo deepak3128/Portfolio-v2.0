@@ -70,7 +70,7 @@ export default function App() {
            so content fills the screen instead of leaving wide side margins.
            Mobile/tablet layout is intentionally untouched. */
         @media (min-width: 1200px) {
-          html { zoom: 1.25; }
+          html { zoom: 1.2; }
         }
       `}</style>
       <Navbar />
