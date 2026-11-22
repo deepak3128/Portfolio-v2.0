@@ -28,8 +28,16 @@ export default function Skills() {
   return (
     <section className="skills section" id="skills">
       <style>{`
+        html { overflow-x: hidden; }
         .skills-right .skill-note { font-size: 25px; }
         .skills-right .skill-arrow { width: 20px; height: 26px; vertical-align: -6px; margin-right: 6px; }
+        /* keep the skills column inside the mobile viewport */
+        @media (max-width: 760px) {
+          .skills-inner, .skills-left, .skills-right, .github-card { min-width: 0; max-width: 100%; }
+          .graph { grid-auto-columns: minmax(0, 1fr); gap: 3px; }
+          .graph i { width: 100%; height: auto; aspect-ratio: 1; }
+          .skill-pills { max-width: 100%; }
+        }
       `}</style>
       <div className="container skills-inner">
         <div className="skills-left reveal">

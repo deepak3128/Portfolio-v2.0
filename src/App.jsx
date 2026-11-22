@@ -65,6 +65,14 @@ export default function App() {
 
   return (
     <>
+      <style>{`
+        /* Desktop/laptop: render at the equivalent of 125% browser zoom
+           so content fills the screen instead of leaving wide side margins.
+           Mobile/tablet layout is intentionally untouched. */
+        @media (min-width: 1200px) {
+          html { zoom: 1.25; }
+        }
+      `}</style>
       <Navbar />
       <Hero />
       <TechMarquee />

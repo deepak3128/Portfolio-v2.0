@@ -86,6 +86,13 @@ export default function Hero() {
         .hero .tape::after {
           display: none;
         }
+        @media (max-width: 760px) {
+          .hero .terminal { left: 0; bottom: 0; }
+          .hero .terminal-note { right: 0; }
+        }
+        @media (max-width: 430px) {
+          .hero .polaroid { right: 0; }
+        }
       `}</style>
 
       <div className="container hero-inner">

@@ -90,7 +90,7 @@ export const projects = [
     image: '/assets/hair-reviver.png',
     imageAlt: 'Hair-Reviver client management dashboard',
     github: 'https://github.com/deepak3128/hair-reviver',
-    live: 'https://your-live-demo-link.com',
+    live: 'https://hair-reviver.onrender.com/',
   },
   {
     number: '#04',
@@ -100,7 +100,7 @@ export const projects = [
     title: 'RMS',
     description: 'Splits trip and hostel expenses between friends, with UPI settle-up. I made it after one too many Goa trips. 5k+ downloads.',
     tech: ['Kotlin', 'Jetpack Compose', 'Firebase'],
-    visual: 'visual-pink',
+    visual: 'visual-pink fit-image',
     image: '/assets/rms.png',
     imageAlt: 'Restroom Management System web based interface',
     github: 'https://github.com/deepak3128/rms',

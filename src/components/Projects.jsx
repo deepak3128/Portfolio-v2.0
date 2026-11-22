@@ -97,6 +97,10 @@ export default function Projects() {
 
   return (
     <section className="projects section" id="projects">
+      <style>{`
+        /* wide screenshots show fully instead of being cropped */
+        .project-visual.fit-image img { object-fit: contain; }
+      `}</style>
       <div className="container">
         <div className="section-head reveal">
           <div>
