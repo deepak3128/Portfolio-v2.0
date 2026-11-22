@@ -83,10 +83,10 @@ export default function Hero() {
               See my work
               <ArrowDownIcon />
             </a>
-            <a className="icon-btn" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+            <a className="icon-btn" href="https://github.com/deepak3128" target="_blank" rel="noopener" aria-label="GitHub">
               <GithubIcon />
             </a>
-            <a className="icon-btn" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <a className="icon-btn" href="https://linkedin.com/in/deepak-katiyar" target="_blank" rel="noopener" aria-label="LinkedIn">
               <LinkedinIcon />
             </a>
             <a className="icon-btn" href={`mailto:${profile.email}`} aria-label="Email">
@@ -99,7 +99,7 @@ export default function Hero() {
           <div className="polaroid">
             <div className="tape"></div>
             <img src="/assets/hero-photo.png" alt={`Portrait of ${profile.name}`} />
-            <span className="polaroid-caption">tugging</span>
+            <span className="polaroid-caption">hugging</span>
           </div>
 
           <div className="cgpa-badge">

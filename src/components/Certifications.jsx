@@ -26,9 +26,13 @@ export default function Certifications() {
               </div>
               <div className="cert-id">{cert.id}</div>
               <div className="cert-date">{cert.date}</div>
-              <a className="cert-link" href="#certifications" aria-label="View certificate">
-                <ArrowUpRightIcon />
-              </a>
+              {cert.verify ? (
+                <a className="cert-link" href={cert.verify} target="_blank" rel="noopener" aria-label={`Verify ${cert.title}`}>
+                  <ArrowUpRightIcon />
+                </a>
+              ) : (
+                <span className="cert-link" aria-hidden="true" />
+              )}
             </div>
           ))}
         </div>

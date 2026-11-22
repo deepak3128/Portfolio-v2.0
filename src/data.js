@@ -185,14 +185,19 @@ export const timeline = [
   },
 ]
 
+/* ------------------------------------------------------------------
+   VERIFY LINKS — add the certificate / badge URL in `verify`.
+   The ↗ button on each row opens this link.
+   Leave it '' to hide the button for that row.
+   ------------------------------------------------------------------ */
 export const certificates = [
-  { icon: 'icon-aws', mark: 'aws', title: 'AWS Certified Cloud Practitioner', org: 'Amazon Web Services', id: 'ID AWS-CCP-8F21K', date: "JAN '25" },
-  { icon: 'icon-dsa', mark: '🎓', title: 'Data Structures & Algorithms', badge: 'ELITE + GOLD', org: 'NPTEL · IIT Kharagpur · Top 2%', id: 'ID NPTEL24CS41', date: "APR '24" },
-  { icon: 'icon-meta', mark: 'IBM', title: 'Python', org: 'IBM · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23" },
-  { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Trooper Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /arjunn', date: "OCT '23" },
-  { icon: 'icon-oracle', mark: '☕', title: 'Oracle Certified Associate, Java SE 8', org: 'Oracle University', id: 'ID KWZZ9SZXNDSA', date: "JUN '23" },
-  { icon: 'icon-google', mark: 'G', title: 'Tools of the Trade: Linux and SQL', org: 'Google  · Coursera', id: 'ID 88L5F96532XL', date: "Nov '23 " },
-  { icon: 'icon-google', mark: 'G', title: 'Network Security', org: 'Google  · Coursera', id: 'ID ML-QX93LP', date: "Nov '23 " },
+  { icon: 'icon-aws', mark: 'aws', title: 'AWS Certified Cloud Practitioner', org: 'Amazon Web Services', id: 'ID AWS-CCP-8F21K', date: "JAN '25", verify: 'https://www.credly.com/your-certificate-link' },
+  { icon: 'icon-dsa', mark: '🎓', title: 'Data Structures & Algorithms', badge: 'ELITE + GOLD', org: 'NPTEL · IIT Kharagpur · Top 2%', id: 'ID NPTEL24CS41', date: "APR '24", verify: 'https://nptel.ac.in/your-certificate-link' },
+  { icon: 'icon-meta', mark: 'IBM', title: 'Python', org: 'IBM · Coursera Professional Certificate', id: 'ID META-FE-72JD', date: "DEC '23", verify: 'https://coursera.org/verify/your-certificate-id' },
+  { icon: 'icon-google', mark: 'G', title: 'Google Cloud Arcade, Trooper Tier', org: 'Google Cloud Skills Boost · 42 badges', id: 'PROFILE /arjunn', date: "OCT '23", verify: 'https://cloud.google.com/skills/your-profile' },
+  { icon: 'icon-oracle', mark: '☕', title: 'Oracle Certified Associate, Java SE 8', org: 'Oracle University', id: 'ID KWZZ9SZXNDSA', date: "JUN '23", verify: 'https://education.oracle.com/your-certification' },
+  { icon: 'icon-google', mark: 'G', title: 'Tools of the Trade: Linux and SQL', org: 'Google  · Coursera', id: 'ID 88L5F96532XL', date: "Nov '23 ", verify: 'https://coursera.org/verify/88L5F96532XL' },
+  { icon: 'icon-google', mark: 'G', title: 'Network Security', org: 'Google  · Coursera', id: 'ID KWZZ9SZXNDSA', date: "Nov '23 ", verify: 'https://coursera.org/verify/KWZZ9SZXNDSA' },
 ]
 
 export const skillGroups = [
