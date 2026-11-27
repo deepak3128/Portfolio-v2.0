@@ -77,7 +77,7 @@ export const projects = [
     image: '/assets/opd-system.png',
     imageAlt: 'OPD System homepage',
     github: 'https://github.com/deepak3128/UrbanMed-Sync',
-    live: 'https://your-live-demo-link.com',
+    live: 'https://urbanmed.onrender.com/',
   },
   {
     number: '#03',
@@ -106,7 +106,7 @@ export const projects = [
     imageAlt: 'Restroom Management System web based interface',
     github: 'https://github.com/deepak3128/rms',
     live: 'https://your-live-demo-link.com',
-    liveLabel: 'Play Store',
+    liveLabel: 'Live',
     play: true,
   },
   {
